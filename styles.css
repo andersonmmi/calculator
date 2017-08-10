@@ -1,3 +1,9 @@
+body{
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
 .calculator{
   display: grid;
   grid-template-columns: 20vw 20vw 20vw 20vw;
@@ -6,7 +12,7 @@
 input{
   grid-column: span 3;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 10vw;
   text-align: right;
 }
 div{
@@ -17,7 +23,7 @@ div{
   margin: 5px auto;
   padding: 9vh 9vw 9vh 9vw;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 6vw;
   grid-column: span 1;
 }
 div:hover{
