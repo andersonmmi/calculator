@@ -1,0 +1,31 @@
+.calculator{
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+}
+input{
+  grid-column: span 3;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: right;
+}
+div{
+  display:flex;
+  background: green;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+  padding: 9vh 9vw 9vh 9vw;
+  font-weight: bold;
+  font-size: 3vw;
+  grid-column: span 1;
+}
+div:hover{
+  background: lightgreen;
+}
+.operator{
+  background: lightgreen;
+}
+.operator:hover{
+  background-color: green;
+}
