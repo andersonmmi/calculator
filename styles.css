@@ -6,25 +6,47 @@ body{
 }
 .calculator{
   display: grid;
-  grid-template-columns: 20vw 20vw 20vw 20vw;
-  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+  grid-template-columns: repeat(4,20vw);
+  grid-template-rows: repeat(5,19vh);
+  grid-gap: 1%;
+  background-color: #343;
+  width: 85vw;
+  height: 99vh;
+  border-right: 8px solid #333;
 }
 input{
   grid-column: span 3;
   font-weight: bold;
   font-size: 10vw;
   text-align: right;
+  border: 8px solid #343;
+  border-top-color: #222;
+  border-left-color: #232;
+  border-right-color: #333;
+  border-bottom-color: #454;
 }
 div{
   display:flex;
   background: green;
+  border: 8px solid #343;
+  border-top-color: #454;
+  border-left-color: #232;
+  border-right-color: #333;
+  border-bottom-color: #222;
   justify-content: center;
   align-items: center;
   margin: 5px auto;
-  padding: 9vh 9vw 9vh 9vw;
+  padding: 5vh 5vw;
   font-weight: bold;
   font-size: 6vw;
   grid-column: span 1;
+  width: 9vw;
+}
+.click{
+  border-top-color: #121;
+  border-left-color: #222;
+  border-right-color: #222;
+  border-bottom-color: #454;
 }
 div:hover{
   background: lightgreen;
